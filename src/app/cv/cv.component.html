@@ -1,20 +1,9 @@
 <div>
   <h1>Marcus Fields</h1>
   <h2>513-370-8421 | fieldsmu@gmail.com</h2>
-  <div *ngFor='let workplace of workplaces'>
-      <h3>{{workplace.name}} | {{workplace.location}}</h3>
-      <ul *ngFor='let thing of workplace.things'>
-        <li>{{thing}}</li>
-      </ul>
-      <hr>
-  </div>
-  <div *ngFor='let school of schools'>
-      <h3>{{school.name}} | {{school.location}}</h3>
-      <ul *ngFor='let thing of school.things'>
-        <li>{{thing}}</li>
-      </ul>
-      <hr>
-  </div>
+  <hr>
+  <app-cv-work></app-cv-work>
+  <app-cv-education></app-cv-education>
     <h3>Skills</h3>
     <ul *ngFor='let skill of skills'>
       <li>{{skill}}</li>

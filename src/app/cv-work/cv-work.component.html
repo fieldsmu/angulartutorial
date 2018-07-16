@@ -1,0 +1,7 @@
+<div *ngFor='let workplace of workplaces'>
+    <h3>{{workplace.name}} | {{workplace.location}}</h3>
+    <ul *ngFor='let thing of workplace.things'>
+      <li>{{thing}}</li>
+    </ul>
+    <hr>
+</div>
